@@ -19,14 +19,14 @@
         </ul>
     </nav>
 
-    <header class="hero">
+    <header class="hero" id="about">
         <div class="hero-text">
             <p class="greeting">Hi there, I'm</p>
             <h1>Lucas-Stefan Iftinca</h1>
             <h2>CS Student @ UVT | Automation Enthusiast</h2>
             <p class="bio">
                 Building practical, scalable solutions. Currently focused on 
-                <strong>Python Development</strong> and <strong>AI Automation</strong>.
+                <strong>Backend Development</strong> (Java/Python) and <strong>AI Automation</strong>.
             </p>
             <div class="buttons">
                 <a href="#projects" class="btn primary">View My Work</a>
@@ -42,21 +42,22 @@
         <h2 class="section-title">My Tech Stack</h2>
         <div class="stack-grid">
             <div class="stack-card">
-                <h3>Core</h3>
-                <p>Python (OOP, File I/O)</p>
+                <h3>Core & Backend</h3>
+                <p>Java 17 (Spring Boot)</p>
+                <p>Python (OOP, Scripting)</p>
                 <p>C/C++</p>
             </div>
             <div class="stack-card">
-                <h3>Web & API</h3>
-                <p>HTML5 / CSS3 (Flexbox)</p>
-                <p>Flask / Django (Learning)</p>
-                <p>OpenAI & Gemini APIs</p>
+                <h3>Web & Data</h3>
+                <p>HTML5 / CSS3 / Thymeleaf</p>
+                <p>SQL (H2, MySQL)</p>
+                <p>REST APIs & JSON</p>
             </div>
             <div class="stack-card">
-                <h3>Tools</h3>
+                <h3>Tools & AI</h3>
                 <p>Git & GitHub</p>
                 <p>Linux / CLI</p>
-                <p>Make.com (Automation)</p>
+                <p>OpenAI & Gemini Integration</p>
             </div>
         </div>
     </section>
@@ -66,41 +67,71 @@
         
         <article class="project-card">
             <div class="project-info">
-                <h3>Autonomous AI News Monitor</h3>
-                <p class="tech-tag">Python • OpenAI API • Make.com</p>
-                <p>An automated system that orchestrates RSS feeds and GPT-4o to analyze news and generate reports via Telegram.</p>
-                <a href="https://github.com/LucasIftinca" target="_blank" class="link-arrow">View Code &rarr;</a>
+                <div class="card-header">
+                    <h3>Heavy Equipment Sales System</h3>
+                    <span class="status-badge completed">Completed</span>
+                </div>
+                <p class="tech-tag">Java Spring Boot • JPA/Hibernate • Multithreading • PDF Gen</p>
+                <p>A full-stack MVC enterprise application for managing heavy machinery inventory. Features include secure authentication, dynamic PDF contract generation, and a concurrent Socket server for real-time monitoring.</p>
+                <a href="https://github.com/LucasIftinca/Heavy-Equipment-Sales-System" target="_blank" class="link-arrow">View Code &rarr;</a>
+            </div>
+        </article>
+        
+        <article class="project-card">
+            <div class="project-info">
+                <div class="card-header">
+                    <h3>Smart Expense Tracker CLI</h3>
+                    <span class="status-badge completed">Completed</span>
+                </div>
+                <p class="tech-tag">Python • Gemini 2.0 AI • OOP • CSV Persistence</p>
+                <p>A next-gen CLI finance tool that uses <strong>Gemini 2.0 Flash</strong> to parse natural language inputs. Users can log expenses by simply typing phrases like "I spent 50 RON on lunch today", demonstrating advanced API integration and AI automation.</p>
+                <a href="https://github.com/LucasIftinca/Expense-Tracker-CLI" target="_blank" class="link-arrow">View Code &rarr;</a>
             </div>
         </article>
 
         <article class="project-card">
             <div class="project-info">
-                <h3>Expense Tracker CLI</h3>
-                <p class="tech-tag">Python • OOP • CSV Persistence</p>
-                <p>A Command Line Interface application to track personal finances, focusing on solid OOP principles and stable data persistence.</p>
-                <a href="https://github.com/LucasIftinca" target="_blank" class="link-arrow">View Code &rarr;</a>
+                <div class="card-header">
+                    <h3>AI Content Generator</h3>
+                    <span class="status-badge upcoming">Coming Soon</span>
+                </div>
+                <p class="tech-tag">Python • Flask • GenAI API</p>
+                <p>An upcoming web application focused on automated content creation. Building upon the AI integration skills developed in the Expense Tracker project.</p>
+                <span class="coming-soon-text">In development...</span>
             </div>
         </article>
 
         <article class="project-card">
             <div class="project-info">
-                <h3>Personal Portfolio</h3>
+                <div class="card-header">
+                    <h3>Personal Portfolio Website</h3>
+                    <span class="status-badge live">Live</span>
+                </div>
                 <p class="tech-tag">HTML5 • CSS3 • GitHub Pages</p>
-                <p>The site you are looking at right now. Designed as a professional digital resume.</p>
+                <p>A professional digital resume showcasing my journey and technical projects. Focused on clean design and responsive performance.</p>
                 <a href="#" class="link-arrow">You are here</a>
             </div>
         </article>
     </section>
 
-    <footer id="contact">
-        <h2>Let's Connect</h2>
-        <p>Open for part-time internships or collaborative projects.</p>
-        <div class="socials">
-            <a href="https://www.linkedin.com/in/lucas-stefan-iftinca-622270353/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/LucasIftinca" target="_blank">GitHub</a>
-            <a href="mailto:iftincalucasstefan@yahoo.com">Email Me</a>
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>Let's Connect!</h2>
+            <p>I am actively seeking <strong>part-time internships</strong> or <strong>collaborative projects</strong> to gain professional experience during the upcoming semester.</p>
+            
+            <div class="contact-buttons">
+                <a href="https://www.linkedin.com/in/lucas-stefan-iftinca-622270353/" target="_blank" class="btn primary">Connect on LinkedIn</a>
+                <a href="mailto:iftincalucasstefan@yahoo.com" class="btn secondary">Send Email</a>
+            </div>
         </div>
-        <p class="copyright">© 2026 Lucas-Stefan Iftinca</p>
+    </section>
+
+    <footer>
+        <div class="footer-links">
+            <a href="https://github.com/LucasIftinca" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/lucas-stefan-iftinca-622270353/" target="_blank">LinkedIn</a>
+        </div>
+        <p class="copyright">© 2026 Lucas-Stefan Iftinca. Built with code.</p>
     </footer>
 
 </body>
